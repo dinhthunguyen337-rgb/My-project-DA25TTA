@@ -1,0 +1,14 @@
+table {
+    border-collapse: collapse; /* Gộp các đường viền đôi lại thành đường viền đơn */
+    width: 100%;               /* Giúp bảng rộng hết màn hình (tùy chọn) */
+}
+
+th, td {
+    border: 1px solid black;   /* Kẻ đường viền đen dày 1px cho các ô */
+    padding: 8px;              /* Tạo khoảng cách đệm bên trong các ô cho dễ nhìn */
+    text-align: left;          /* Căn lề trái cho chữ */
+}
+
+th {
+    background-color: #f2f2f2; /* Tô màu nền xám nhạt cho hàng tiêu đề */
+}

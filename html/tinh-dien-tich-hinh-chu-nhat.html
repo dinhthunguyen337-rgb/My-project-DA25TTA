@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang ="vi">
+    <head>
+    <title>Tính diện tích</title>
+    <meta charset="uft-8">
+    </head>
+    <body>
+        <div class="container">
+            <p id="name">Tính diện tích</p>
+        </div>
+       <script>
+        
+        let d = Number(prompt("Nhập chiều dài: "));
+        let r = Number(prompt("Nhập Chiều rộng: "));
+
+        
+        while (d < r) {
+            alert("Chiều dài phải lớn hơn hoặc bằng rộng");
+            d = Number(prompt("Nhập chiều dài: "));
+            r = Number(prompt("Nhập Chiều rộng: "));
+        }
+
+      
+        if (d === r) {
+            window.alert(`Diện tích hình vuông có cạnh = ${r} là ${r * r} cm^2`);
+        } else {
+            window.alert(`Diện tích hình chữ nhật có chiều dài là ${d} cm và chiều rộng = ${r} cm là ${d * r} cm^2`);
+        }
+    </script>
+    </body>
+</html>

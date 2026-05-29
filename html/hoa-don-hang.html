@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <title>Hóa Đơn</title>
+        <link rel="stylesheet" href="../css/style4.css">
+    </head>
+    <body>
+        <table border ="1">
+            <h1>Hóa Đơn Hàng</h1>
+            <tr>
+                <th>STT</th>
+                <th>Tên Hàng</th>
+                <th>Số Lượng</th>   
+                 <th>Đơn Giá</th>
+                 <th>ĐVT</th>
+                 <th>Thành Tiền</th>
+            </tr>
+            <tr>
+                <td class="stt">1</td>
+                <td class="tenhang">A</td>
+                <td class="soluong">2</td>
+                 <td class="dongia">50</td>
+                  <td class="dvt">Thùng</td>
+                   <td class="thanhtien">?</td>
+            </tr>
+            <tr>
+                <td class="stt">2</td>
+                 <td class="tenhang">B</td>
+                  <td class="soluong">5</td>
+                   <td class="dongia">70</td>
+                    <td class="dvt">cái</td>
+                      <td class="thanhtien">?</td>
+            </tr>
+            <tr>
+                <td class="stt">3</td>
+                 <td class="tenhang">C</td>
+                  <td class="soluong">7</td>
+                   <td class="dongia">100</td>
+                    <td class="dvt">Thùng</td>
+                     <td class="thanhtien">?</td>
+            </tr>
+            <tr>
+                <td  class="thanhtoan" colspan="4" >Tổng Thanh Toán</td>
+                <td  class="hang" colspan="2" id="tongthanhtoan">?</td>
+            </tr>
+            <script>
+                const sl= document.getElementsByClassName("soluong");
+                const dg= document.getElementsByClassName("dongia");
+                const tt= document.getElementsByClassName("thanhtien");
+
+                let tong= 0;
+                for(let i=0;i<sl.length;i++)
+            {
+                tt[i].innerHTML = Number(sl[i].innerHTML) * Number(dg[i].innerHTML);
+               tong += Number(tt[i].innerHTML);
+            }
+            document.getElementById("tongthanhtoan").innerHTML=tong;
+            </script>
+        </table>
+    </body>

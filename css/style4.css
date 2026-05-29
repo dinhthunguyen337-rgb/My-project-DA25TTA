@@ -1,0 +1,54 @@
+table {
+    border-collapse: collapse; 
+    width: 60%;               
+}
+
+th, td {
+    border: 1px solid black;    
+    padding: 8px;               
+    text-align: left;          
+}
+
+th {
+    background-color: #979797; 
+}
+td.soluong {
+ 
+    background-color: #5978a3;
+    
+}
+td.stt{
+   
+    background-color:red;
+    font-weight: bold;
+}
+td.tenhang{
+   
+    background-color:rgb(235, 160, 172);
+    font-weight: bold;
+}
+td.dongia{
+   
+    background-color:rgb(255, 255, 0);
+    font-weight: bold;
+}
+td.dvt{
+   
+    background-color:rgb(192, 255, 206);
+    font-weight: bold;
+}
+td.thanhtien{
+   
+    background-color:rgb(198, 192, 255);
+    font-weight: bold;
+}
+td.thanhtoan{
+   
+    background-color:rgb(238, 89, 2);
+    font-weight: bold;
+}
+td.hang{
+   
+    background-color:rgb(91, 0, 238);
+    font-weight: bold;
+}
